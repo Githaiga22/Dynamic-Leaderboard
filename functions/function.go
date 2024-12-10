@@ -16,19 +16,26 @@ func QuickSort(participants []models.Participant, low, high int) {
 }
 
 func partition(participants []models.Participant, low, high int) int {
-	pivot := participants[high].Score
-	i := low - 1
+    pivot := participants[high].Score
+    i := low - 1
 
-	for j := low; j < high; j++ {
-		if participants[j].Score >= pivot {
-			i++
-			participants[i], participants[j] = participants[j], participants[i]
-		}
-	}
+    fmt.Printf("Initial Participants: %+v\n", participants)
+    fmt.Printf("Pivot: %d\n", pivot)
 
-	participants[i+1], participants[high] = participants[high], participants[i+1]
-	return i + 1
+    for j := low; j < high; j++ {
+        if participants[j].Score >= pivot {
+            i++
+            participants[i], participants[j] = participants[j], participants[i]
+            fmt.Printf("Swapped: %+v\n", participants)
+        }
+    }
+
+    participants[i+1], participants[high] = participants[high], participants[i+1]
+    fmt.Printf("Final Partition: %+v\n", participants)
+
+    return i + 1
 }
+
 
 // UpdateScore updates a participant's score.
 func UpdateScore(participants []models.Participant, name string, newScore int) {
