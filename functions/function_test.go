@@ -32,17 +32,25 @@ func TestQuickSort(t *testing.T) {
 
 func TestPartition(t *testing.T) {
 	participants := []models.Participant{
-		{Name:"Alice",Score:  85},
-		{Name:"Bob", Score: 70},
-		{Name:"Charlie", Score: 90},
-		{Name:"Diana", Score: 75},
+		{Name: "Alice", Score: 85},
+		{Name: "Bob", Score: 70},
+		{Name: "Charlie", Score: 90},
+		{Name: "Diana", Score: 75},
 	}
 
 	pivotIndex := partition(participants, 0, len(participants)-1)
+	pivotScore := participants[pivotIndex].Score
 
-	// Check if partition is working (elements on the left should be larger than pivot)
-	if participants[pivotIndex].Score != 90 {
-		t.Errorf("Expected pivot element to be 90, but got %d", participants[pivotIndex].Score)
+	// Validate partitioning logic
+	for i := 0; i < pivotIndex; i++ {
+		if participants[i].Score < pivotScore {
+			t.Errorf("Element %v before pivot is less than pivot score %d", participants[i], pivotScore)
+		}
+	}
+	for i := pivotIndex + 1; i < len(participants); i++ {
+		if participants[i].Score >= pivotScore {
+			t.Errorf("Element %v after pivot is greater than or equal to pivot score %d", participants[i], pivotScore)
+		}
 	}
 }
 
@@ -70,8 +78,8 @@ func TestUpdateScore_ExistingParticipant(t *testing.T) {
 
 func TestCheckIfParticipantExists(t *testing.T) {
 	participants := []models.Participant{
-		{Name:"Alice", Score: 85},
-		{Name:"Bob", Score: 70},
+		{Name: "Alice", Score: 85},
+		{Name: "Bob", Score: 70},
 	}
 
 	// Test existence
