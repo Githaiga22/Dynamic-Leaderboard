@@ -80,3 +80,19 @@ func TestUpdateScore_ExistingParticipant(t *testing.T) {
 		}
 	}
 }
+
+func TestCheckIfParticipantExists(t *testing.T) {
+	participants := []models.Participant{
+		{Name:"Alice", Score: 85},
+		{Name:"Bob", Score: 70},
+	}
+
+	// Test existence
+	if !CheckIfParticipantExists(participants, "Alice") {
+		t.Errorf("Expected Alice to exist, but got false")
+	}
+
+	if CheckIfParticipantExists(participants, "Charlie") {
+		t.Errorf("Expected Charlie not to exist, but got true")
+	}
+}
