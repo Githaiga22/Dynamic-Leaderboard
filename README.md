@@ -108,7 +108,7 @@ Enter the new score: 71
 Contributions are welcome! Feel free to open issues or submit pull requests for new features or improvements.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE)
 
 ---
 Explore the full codebase on [GitHub](https://github.com/Githaiga22/Dynamic-Leaderboard).
