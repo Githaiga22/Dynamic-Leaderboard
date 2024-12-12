@@ -112,4 +112,4 @@ This project is licensed under the [MIT License](LICENSE)
 
 ---
 ## Article
-Explore the full explained codebase on [Dev.to](https://dev.to/githaiga22/mastering-algorithms-with-go-a-beginners-guide-to-sorting-small-data-sets-1nn9).
+Explore the full explained codebase on [Dev.to](https://dev.to/githaiga22/mastering-algorithms-with-go-a-beginners-guide-to-sorting-small-data-sets-1nn9)
