@@ -111,4 +111,5 @@ Contributions are welcome! Feel free to open issues or submit pull requests for 
 This project is licensed under the [MIT License](LICENSE)
 
 ---
-Explore the full codebase on [GitHub](https://github.com/Githaiga22/Dynamic-Leaderboard).
+## Article
+Explore the full explained codebase on [Dev.to](https://dev.to/githaiga22/mastering-algorithms-with-go-a-beginners-guide-to-sorting-small-data-sets-1nn9).
