@@ -78,3 +78,25 @@ go test ./functions
 ```
 Sample output for test cases is included in the terminal logs.
 
+## Example Demo
+Below is an example of the leaderboard in action:
+
+```bash
+Enter the number of participants: 2
+Enter name for participant 1: Allan
+Enter score for participant Allan: 70
+Enter name for participant 2: Brian
+Enter score for participant Brian: 70.5
+
+--- Hackathon Leaderboard ---
+1. Allan - 70
+2. Brian - 70.5
+
+Do you want to update a score? (yes/no): yes
+Enter the participant's name to update score: Brian
+Enter the new score: 71
+
+--- Hackathon Leaderboard ---
+1. Brian - 71
+2. Allan - 70
+```
