@@ -70,3 +70,11 @@ Dynamic-Leaderboard/
 
 3. **Sorting Logic**
    The leaderboard is sorted using a simple partitioning technique, ensuring the highest scores are listed first.
+
+## Testing
+To run tests:
+```bash
+go test ./functions
+```
+Sample output for test cases is included in the terminal logs.
+
