@@ -100,3 +100,15 @@ Enter the new score: 71
 1. Brian - 71
 2. Allan - 70
 ```
+
+## Visual Demo
+![Dynamic Leaderboard Demo](Demo/Demo.png)
+
+## Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests for new features or improvements.
+
+## License
+This project is licensed under the MIT License.
+
+---
+Explore the full codebase on [GitHub](https://github.com/Githaiga22/Dynamic-Leaderboard).
